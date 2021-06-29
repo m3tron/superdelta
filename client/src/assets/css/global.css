@@ -1,0 +1,22 @@
+:root {
+  --blue: #20145f;
+  --orange: #f66732;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* background-color: #f66732;
+  color: #20145f; */
+
+/* header {
+  position: fixed;
+  overflow: hidden;
+  background-color: #ffffff;
+  width: 100%;
+} */
+
+li {
+  list-style: none;
+}
