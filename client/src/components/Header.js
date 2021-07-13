@@ -3,6 +3,7 @@ import logo from "../assets/images/logo.png";
 
 const TopHeader = styled.div`
   display: flex;
+  justify-content: center;
   margin: 1rem;
 `;
 
@@ -11,6 +12,7 @@ const Logo = styled.img`
   width: 20rem;
 
   @media (max-width: 500px) {
+    height: auto;
     width: 10rem;
   }
 `;
@@ -21,10 +23,19 @@ const NavigationBar = styled.nav`
   background-color: var(--blue);
   padding: 1rem;
   align-items: center;
+
+  @media screen and (max-width: 500px) {
+    display: none;
+  }
+`;
+
+const NavItem = styled.li`
+  list-style: none;
 `;
 
 const NavLink = styled.a`
   text-decoration: none;
+  font-weight: bolder;
   color: #ffffff;
   margin: 1rem;
   padding: 1rem;
@@ -38,7 +49,7 @@ const ContactSection = styled.div`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 100%;
+  width: 50%;
   color: var(--blue);
 `;
 
@@ -47,7 +58,8 @@ const ContactLink = styled.a`
   grid-template-columns: auto auto;
   text-decoration: none;
   color: var(--blue);
-  font-size: 1rem;
+  font-size: 1.3rem;
+  place-items: center;
   text-align: center;
 
   &:hover {
@@ -60,21 +72,32 @@ const ContactIcon = styled.i`
   margin-right: 1rem;
 `;
 
+const HamburgerIcon = styled.i`
+  display: none;
+
+  @media screen and (max-width: 500px) {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+`;
+
 const Header = () => {
   const links = [
-    { link: "Home", href: "/" },
+    { link: "Home", href: "#" },
     { link: "About Us", href: "/" },
-    { link: "Services", href: "/" },
+    { link: "Services", href: "#services" },
     { link: "some link3", href: "/" },
     { link: "some link4", href: "/" },
   ];
 
   const navLink = (link, href) => (
-    <li key={link}>
+    <NavItem key={link}>
       <NavLink className="link" href={href}>
         {link}
       </NavLink>
-    </li>
+    </NavItem>
   );
 
   return (
@@ -97,7 +120,9 @@ const Header = () => {
             </div>
           </ContactLink>
         </ContactSection>
+        <HamburgerIcon className="fas fa-bars"></HamburgerIcon>
       </TopHeader>
+
       <NavigationBar>
         {links.map(link => navLink(link.link, link.href))}
       </NavigationBar>
