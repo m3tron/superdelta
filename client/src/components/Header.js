@@ -116,11 +116,11 @@ const Header = () => {
             <ContactIcon className="fas fa-at" />
             <div>
               <div>Email Us</div>
-              <div>test@email.com</div>
+              <div>test@test.com</div>
             </div>
           </ContactLink>
         </ContactSection>
-        <HamburgerIcon className="fas fa-bars"></HamburgerIcon>
+        {/* <HamburgerIcon className="fas fa-bars"></HamburgerIcon> */}
       </TopHeader>
 
       <NavigationBar>

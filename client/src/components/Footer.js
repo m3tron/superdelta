@@ -5,8 +5,17 @@ const FooterContainer = styled.footer`
   justify-content: center;
   background: var(--blue);
   color: #ffffff;
+  padding: 1rem;
 `;
 
-const Footer = () => <FooterContainer>this is the footer</FooterContainer>;
+const Footer = () => {
+  const date = new Date();
+
+  return (
+    <FooterContainer>
+      &copy; {date.getFullYear()} Super Delta Heating & Cooling Inc.
+    </FooterContainer>
+  );
+};
 
 export default Footer;
