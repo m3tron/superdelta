@@ -1,14 +1,14 @@
-import Header from "./Header";
-import Hero from "./Hero";
-import Services from "./Services";
-import Footer from "./Footer";
+// import Header from "./Header";
+// import Hero from "./Hero";
+// import Services from "./Services";
+// import Footer from "./Footer";
 
 const App = () => (
   <>
-    <Header />
+    {/* <Header />
     <Hero />
     <Services />
-    <Footer />
+    <Footer /> */}
   </>
 );
 
