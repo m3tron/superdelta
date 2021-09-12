@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/assets/css/global.css"],"names":[],"mappings":"AAAA,MACE,cAAe,CACf,gBACF,CAEA,KACE,sBAAuB,CACvB,+BACF","file":"main.8a3d0e61.chunk.css","sourcesContent":[":root {\n  --blue: #20145f;\n  --orange: #f66732;\n}\n\nhtml {\n  scroll-behavior: smooth;\n  font-family: \"Roboto\", sans-serif;\n}\n"]}
