@@ -1,3 +1,4 @@
+import { useState } from "react";
 import styled from "styled-components";
 import logo from "../assets/images/logo.png";
 
@@ -5,6 +6,7 @@ const TopHeader = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: #ffffff;
 
   @media only screen and (min-width: 768px) {
     justify-content: center;
@@ -49,6 +51,10 @@ const ContactLink = styled.a`
   }
 
   @media only screen and (min-width: 768px) {
+    font-size: 1rem;
+  }
+
+  @media only screen and (min-width: 1024px) {
     font-size: 1.3rem;
   }
 `;
@@ -89,27 +95,68 @@ const NavItem = styled.li`
 const NavLink = styled.a`
   text-decoration: none;
   font-weight: bolder;
+  font-size: 2rem;
   color: #ffffff;
   margin: 1rem;
   padding: 1rem;
+  display: block;
 
   &:hover {
     color: #f66732;
   }
+
+  @media only screen and (min-width: 768px) {
+    font-size: 1rem;
+    display: inline;
+  }
+`;
+
+const MobileMenu = styled.div`
+  display: ${props => (props.open ? "block" : "none")};
+  height: ${props => (props.open ? "100%" : 0)};
+
+  background-color: rgba(32, 20, 95, 0.9);
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+
+  @media only screen and (min-width: 768px) {
+    display: none;
+  }
+`;
+
+const MobileMenuContent = styled.div`
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin-top: 25%;
+`;
+
+const MenuIcon = styled.i`
+  position: absolute;
+  top: 20px;
+  right: 1rem;
+  color: #ffffff;
 `;
 
 const Header = () => {
+  const [openMenu, setOpenMenu] = useState(false);
+
   const links = [
-    { link: "Home", href: "#" },
-    { link: "About Us", href: "/" },
+    { link: "Home", href: "!#" },
+    { link: "About Us", href: "!#" },
     { link: "Services", href: "#services" },
-    { link: "some link3", href: "/" },
-    { link: "some link4", href: "/" },
+    { link: "some link3", href: "!#" },
+    { link: "some link4", href: "!#" },
   ];
 
   const navLink = (link, href) => (
     <NavItem key={link}>
-      <NavLink className="link" href={href}>
+      <NavLink className="link" href={href} onClick={() => setOpenMenu(false)}>
         {link}
       </NavLink>
     </NavItem>
@@ -129,7 +176,21 @@ const Header = () => {
             <div>test@test.com</div>
           </ContactLink>
         </ContactSection>
-        <HamburgerIcon className="fas fa-bars"></HamburgerIcon>
+
+        <HamburgerIcon
+          className="fas fa-bars"
+          onClick={() => setOpenMenu(!openMenu)}
+        />
+
+        <MobileMenu open={openMenu}>
+          <MenuIcon
+            className="fas fa-times"
+            onClick={() => setOpenMenu(false)}
+          />
+          <MobileMenuContent>
+            {links.map(link => navLink(link.link, link.href))}
+          </MobileMenuContent>
+        </MobileMenu>
       </TopHeader>
 
       <NavigationBar>

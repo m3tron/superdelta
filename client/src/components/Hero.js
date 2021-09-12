@@ -8,9 +8,12 @@ const Container = styled.section`
 `;
 
 const HeroContainer = styled.div`
-  height: 800px;
-  /* width: 1280px; */
+  height: 600px;
   overflow: hidden;
+
+  @media only screen and (min-width: 768px) {
+    height: 800px;
+  }
 `;
 
 const HeroContent = styled.div`
@@ -33,22 +36,28 @@ const MottoContainer = styled.div`
 
 const Motto = styled.div`
   color: #ffffff;
-  margin: 0 0 0 1rem;
-  text-align: center;
-  font-weight: bold;
-  line-height: 5rem;
-  text-shadow: 2px 2px var(--blue);
-  font-size: 3rem;
-`;
-
-const MottoDescription = styled.div`
-  color: #ffffff;
-  margin: 0 0 0 1rem;
   text-align: center;
   font-weight: bold;
   line-height: 5rem;
   text-shadow: 2px 2px var(--blue);
   font-size: 2rem;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 3rem;
+  }
+`;
+
+const MottoDescription = styled.div`
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+  line-height: 5rem;
+  text-shadow: 2px 2px var(--blue);
+  font-size: 1.5rem;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 2rem;
+  }
 `;
 
 const Hero = () => {

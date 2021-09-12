@@ -4,18 +4,28 @@ import furnace from "../assets/images/furnacesmall.jpg";
 
 const Container = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   margin: 2rem 1rem 1rem 1rem;
+
+  @media only screen and (min-width: 768px) {
+    flex-direction: row;
+  }
 `;
 
 const Card = styled.div`
-  width: 30%;
+  width: 100%;
+  margin-bottom: 1rem;
   background: #ffffff;
   box-shadow: 0 4px 8px 0 var(--blue);
   transition: 0.3s;
 
   &:hover {
     box-shadow: 0 8px 16px 0 var(--orange);
+  }
+
+  @media only screen and (min-width: 768px) {
+    width: 30%;
   }
 `;
 
@@ -26,10 +36,10 @@ const CardTitle = styled.div`
   text-align: center;
   padding: 0.5rem 0 0.5rem;
 
-  ${Card}:hover & {
-    /* background: var(--orange); */
+  /* ${Card}:hover & {
+    background: var(--orange);
     transition: 0.3s;
-  }
+  } */
 `;
 
 const CardImageContainer = styled.div`
