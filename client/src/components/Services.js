@@ -65,7 +65,7 @@ const Services = () => {
       description: "Description goes here",
     },
     {
-      type: "Gas Fitting",
+      type: "Ventilation",
       image: furnace,
       description: "Description goes here",
     },
@@ -83,9 +83,9 @@ const Services = () => {
   );
 
   return (
-    <section id="services">
-      <Container>{ServiceList.map(service => ServiceCard(service))}</Container>
-    </section>
+    <Container id="services">
+      {ServiceList.map(service => ServiceCard(service))}
+    </Container>
   );
 };
 

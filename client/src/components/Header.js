@@ -147,8 +147,8 @@ const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
 
   const links = [
-    { link: "Home", href: "!#" },
-    { link: "About Us", href: "!#" },
+    { link: "Home", href: "#home" },
+    { link: "About Us", href: "#about-us" },
     { link: "Services", href: "#services" },
     { link: "some link3", href: "!#" },
     { link: "some link4", href: "!#" },
