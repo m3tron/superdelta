@@ -13,16 +13,32 @@ const Text = styled.div`
   text-align: center;
   margin: 0 1rem 0 1rem;
   padding: 1rem 0 1rem 0;
+
+  @media only screen and (min-width: 768px) {
+    font-size: larger;
+  }
+`;
+
+const Title = styled.h1`
+  font-size: 1.5rem;
 `;
 
 const About = () => {
   return (
     <Container id="about-us">
       <Text>
+        <Title>Who We Are...</Title>
         <p>
           Operating since 2013, our team of experienced and Qualified TSSA
-          Approved Technicians, specialize in all types of industrial and
-          commercial Heating & Refrigeration equipment.
+          (Technical Standards & Safety Authority) Approved Technicians,
+          specialize in all types of industrial and commercial Heating &
+          Refrigeration equipment.
+        </p>
+        <p>
+          We also provide a comprehensive range of backup services including
+          call-out service, emergency breakdown and maintenance packages.
+          Licensed & Insured under TSSA to Operate, Repair and Install Heating,
+          Air and Ventilation services.
         </p>
       </Text>
     </Container>

@@ -150,7 +150,7 @@ const Header = () => {
     { link: "Home", href: "#home" },
     { link: "About Us", href: "#about-us" },
     { link: "Services", href: "#services" },
-    { link: "some link3", href: "!#" },
+    { link: "Testimonials", href: "#testimonials" },
     { link: "some link4", href: "!#" },
   ];
 

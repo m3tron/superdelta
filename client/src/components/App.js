@@ -2,6 +2,7 @@ import Header from "./Header";
 import Hero from "./Hero";
 import About from "./About";
 import Services from "./Services";
+import Testimonials from "./Testimonials";
 import Footer from "./Footer";
 
 const App = () => (
@@ -10,6 +11,7 @@ const App = () => (
     <Hero />
     <About />
     <Services />
+    <Testimonials />
     <Footer />
   </>
 );

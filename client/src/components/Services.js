@@ -47,9 +47,15 @@ const CardImageContainer = styled.div`
   justify-content: center;
 `;
 
-const CardImage = styled.img`
-  width: 100%;
-  height: auto;
+// const CardImage = styled.img`
+//   width: 100%;
+//   height: auto;
+// `;
+
+const CardIcon = styled.i`
+  font-size: 3rem;
+  margin: 1rem;
+  color: var(--blue);
 `;
 
 const Services = () => {
@@ -57,16 +63,19 @@ const Services = () => {
     {
       type: "Heating",
       image: furnace,
-      description: "Description goes here",
-    },
-    {
-      type: "Cooling",
-      image: furnace,
+      icon: "fas fa-fire",
       description: "Description goes here",
     },
     {
       type: "Ventilation",
       image: furnace,
+      icon: "fas fa-wind",
+      description: "Description goes here",
+    },
+    {
+      type: "Cooling",
+      image: furnace,
+      icon: "fas fa-snowflake",
       description: "Description goes here",
     },
   ];
@@ -75,7 +84,8 @@ const Services = () => {
     <Card key={ServiceList.indexOf(service)}>
       <CardTitle>{service.type}</CardTitle>
       <CardImageContainer>
-        <CardImage src={service.image} alt={service.type} />
+        {/* <CardImage src={service.image} alt={service.type} /> */}
+        <CardIcon className={service.icon} />
       </CardImageContainer>
 
       <p>{service.description}</p>
