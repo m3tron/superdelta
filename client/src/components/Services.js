@@ -58,25 +58,40 @@ const CardIcon = styled.i`
   color: var(--blue);
 `;
 
+const CardDescription = styled.div`
+  text-align: center;
+  padding: 1rem;
+  color: var(--blue);
+`;
+
+const Title = styled.h1`
+  font-size: 1.5rem;
+  text-align: center;
+  color: var(--blue);
+`;
+
 const Services = () => {
   const ServiceList = [
     {
       type: "Heating",
       image: furnace,
       icon: "fas fa-fire",
-      description: "Description goes here",
+      description:
+        "Description goes here. A couple of paragraphs or some bullet points",
     },
     {
       type: "Ventilation",
       image: furnace,
       icon: "fas fa-wind",
-      description: "Description goes here",
+      description:
+        "Description goes here. A couple of paragraphs or some bullet points",
     },
     {
       type: "Cooling",
       image: furnace,
       icon: "fas fa-snowflake",
-      description: "Description goes here",
+      description:
+        "Description goes here. A couple of paragraphs or some bullet points",
     },
   ];
 
@@ -88,14 +103,17 @@ const Services = () => {
         <CardIcon className={service.icon} />
       </CardImageContainer>
 
-      <p>{service.description}</p>
+      <CardDescription>{service.description}</CardDescription>
     </Card>
   );
 
   return (
-    <Container id="services">
-      {ServiceList.map(service => ServiceCard(service))}
-    </Container>
+    <>
+      <Title>What We Do...</Title>
+      <Container id="services">
+        {ServiceList.map(service => ServiceCard(service))}
+      </Container>
+    </>
   );
 };
 

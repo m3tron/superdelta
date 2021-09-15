@@ -151,7 +151,7 @@ const Header = () => {
     { link: "About Us", href: "#about-us" },
     { link: "Services", href: "#services" },
     { link: "Testimonials", href: "#testimonials" },
-    { link: "some link4", href: "!#" },
+    { link: "Contact Us", href: "#contact" },
   ];
 
   const navLink = (link, href) => (
@@ -169,11 +169,11 @@ const Header = () => {
         <ContactSection>
           <ContactLink href="tel:5555555555">
             <ContactIcon className="fas fa-phone-alt" />
-            <div>(555) 555-5555</div>
+            <div>Call Now</div>
           </ContactLink>
           <ContactLink href="emailto:test@email.com">
             <ContactIcon className="fas fa-at" />
-            <div>test@test.com</div>
+            <div>E-mail Us</div>
           </ContactLink>
         </ContactSection>
 
