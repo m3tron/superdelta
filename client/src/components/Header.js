@@ -171,7 +171,7 @@ const Header = () => {
             <ContactIcon className="fas fa-phone-alt" />
             <div>Call Now</div>
           </ContactLink>
-          <ContactLink href="emailto:test@email.com">
+          <ContactLink href="mailto:test@email.com">
             <ContactIcon className="fas fa-at" />
             <div>E-mail Us</div>
           </ContactLink>
