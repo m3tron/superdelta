@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 import img1 from "../assets/images/homecropped.jpg";
 
-const Container = styled.section`
+const Container = styled.div`
   display: flex;
   justify-content: center;
 `;
@@ -69,7 +69,7 @@ const Hero = () => {
             <div>
               <Motto>Professional Home Comfort Solutions</Motto>
               <MottoDescription>
-                Serving the Greater Toronto Area
+                Heating, Ventilation, & Air Conditioning
               </MottoDescription>
             </div>
           </MottoContainer>
