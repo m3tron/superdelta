@@ -27,8 +27,8 @@ const Contact = () => {
       <Title>Contact us</Title>
       <ContactContainer>
         <div>
-          <div>(555) 555-5555</div>
-          <div>email@test.com</div>
+          <div>(647) 330-0234</div>
+          <div>superdeltainc@gmail.com</div>
           <div>
             <div>Operating in the Greater Toronto Area</div>
           </div>
