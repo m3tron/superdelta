@@ -168,7 +168,7 @@ const Header = () => {
         <Logo src={logo} alt="Super Delta Heating & Cooling" />
         <ContactSection>
           <ContactLink href="tel:6473300234">
-            <ContactIcon className="fas fa-phone-alt" />
+            <ContactIcon className="fas fa-phone" />
             <div>Call Now</div>
           </ContactLink>
           <ContactLink href="mailto:superdeltainc@gmail.com">
