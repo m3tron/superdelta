@@ -14,6 +14,10 @@ const Text = styled.div`
   margin: 0 1rem 0 1rem;
   padding: 1rem 0 1rem 0;
 
+  p {
+    max-width: 1200px;
+  }
+
   @media only screen and (min-width: 768px) {
     font-size: larger;
   }
