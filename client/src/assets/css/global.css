@@ -7,3 +7,21 @@ html {
   scroll-behavior: smooth;
   font-family: "Roboto", sans-serif;
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.map-container {
+  height: 300px;
+  width: 350px;
+  box-shadow: 0 0 10px var(--blue);
+}
+
+@media only screen and (min-width: 650px) {
+  .map-container {
+    height: 400px;
+    width: 600px;
+  }
+}

@@ -167,11 +167,11 @@ const Header = () => {
       <TopHeader>
         <Logo src={logo} alt="Super Delta Heating & Cooling" />
         <ContactSection>
-          <ContactLink href="tel:5555555555">
-            <ContactIcon className="fas fa-phone-alt" />
+          <ContactLink href="tel:6473300234">
+            <ContactIcon className="fas fa-phone" />
             <div>Call Now</div>
           </ContactLink>
-          <ContactLink href="mailto:test@email.com">
+          <ContactLink href="mailto:superdeltainc@gmail.com">
             <ContactIcon className="fas fa-at" />
             <div>E-mail Us</div>
           </ContactLink>
