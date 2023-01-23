@@ -38,7 +38,7 @@ const Testimonials = () => {
   const getReviews = async () => {
     try {
       const { data } = await axios.get(
-        "https://superdeltabackend.herokuapp.com/"
+        "https://coruscating-truffle-e129cd.netlify.app"
       );
 
       setReviews(data.result.reviews);
