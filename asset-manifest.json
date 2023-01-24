@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.db095529.css",
-    "main.js": "/static/js/main.6c13e329.js",
+    "main.js": "/static/js/main.ba0ff8f2.js",
     "static/media/logo.png": "/static/media/logo.87e6f3a10e4a0d644b11.png",
     "static/media/homecropped.jpg": "/static/media/homecropped.e4657df3337a97d281d1.jpg",
     "static/media/furnacesmall.jpg": "/static/media/furnacesmall.6b187a6e1116dfe8bdd4.jpg",
     "index.html": "/index.html",
     "main.db095529.css.map": "/static/css/main.db095529.css.map",
-    "main.6c13e329.js.map": "/static/js/main.6c13e329.js.map"
+    "main.ba0ff8f2.js.map": "/static/js/main.ba0ff8f2.js.map"
   },
   "entrypoints": [
     "static/css/main.db095529.css",
-    "static/js/main.6c13e329.js"
+    "static/js/main.ba0ff8f2.js"
   ]
 }
